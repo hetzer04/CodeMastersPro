@@ -410,7 +410,7 @@ width: 100%;
 
 /*  Teachers*/
 
-.team-container {
+ .team-container {
     padding-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -423,6 +423,7 @@ width: 100%;
     flex: 0 0 255px;
     display: flex;
     flex-direction: column;
+   
 }
 
 .team-container__item-footer {
@@ -471,7 +472,7 @@ width: 100%;
     text-decoration: none;
     width: 30px;
     height: 30px;
-    /* border: 1px solid #FFFFFF; */
+    
     margin: 10px;
     margin-top: auto;
     margin-bottom: 20px;
@@ -479,18 +480,6 @@ width: 100%;
     line-height: 30px;
     text-align: center;
     transition-duration: 0.5s;
-    transition: opacity 0.2s ease-in;
-}
-
-
-
-.team-container__item > figure  > figcaption > a:hover {
-    opacity: 0.8;
-}
-
-.team-container__item > figure  > figcaption > a:active {
-    position: relative;
-    top: 3px;
 }
 
 
@@ -503,38 +492,26 @@ width: 100%;
     transform: translateY(90px);
 }
 
-.team-container__item > figure  > figcaption > a:nth-child(3) {
-    transform: translateY(130px);
-}
-
-.team-container__item > figure  > figcaption > a:hover {
-    /* color: #00D5C3; */
-    /* background: white; */
- 
-}
 
 .team-container__item > figure > img {
     transition-duration: 1s;
+    border-radius: 10px;
 } 
 
 .team-container__item > figure:hover > img {
     transform: scale3d(1.1, 1.1, 1);
+
 }
 
 .team-container__item > figure:hover > figcaption {
     background: rgba(22, 28, 53, 0.7);
+   
 }
 
 .team-container__item > figure:hover > figcaption > a {
     transform: translateY(0px);
+
 }
-
-
-
-
-
-
-
 
 
 /* Footer */
