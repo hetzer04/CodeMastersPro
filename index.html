@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeMastersPRO</title>
     <link rel="stylesheet" href="./css/main.css">
-</head>
+
+    </head>
 <body>
     <nav class="nav">
         <div class="container">
@@ -37,8 +38,38 @@
             <div class="header__text">
                 <p>Создавай будущее с помощью кода!</p>
             </div>
-            <a href="#!" class="btn">Начать обучение</a>
-        </div>
+            
+
+          
+            <button>
+                <a href="#!" class="btn modal-btn modal-backdrop" for="modal-toggle">Начать обучение</a>
+             </button>
+                       
+         
+
+
+
+         
+  
+
+ 
+            <!-- Modal -->
+            <form action="./api/index.php" method="post">
+                <div class="input">
+                  <input type="text" name="name" id="email" required>
+                  <label for="">Name</label>
+                </div>
+                <div class="input">
+                  <input type="text" name="phone" id="subject" required>
+                  <label for="">phone</label>
+                </div>
+                <!-- <div class="input">
+                  <textarea type="text" name="text" id="text" rows="20"></textarea>
+                  <label for="">Текст</label>
+                </div> -->
+                <button type="submit">Отправить</button>
+              </form>
+         
     </header>
 
     <main class="section" id="directs">

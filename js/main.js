@@ -43,3 +43,5 @@ btnDarkMode.onclick = function () {
         localStorage.setItem("darkMode", "light");
     }
 };
+
+// modal

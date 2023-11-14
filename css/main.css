@@ -58,6 +58,9 @@ html, body {
     /* Light mode */
     background-color: var(--page-bg);
     color: var(--text-color);
+
+
+   
 }
 
 /* General */
@@ -513,6 +516,8 @@ width: 100%;
 
 }
 
+/* Modal */
+
 
 /* Footer */
 
@@ -642,3 +647,5 @@ width: 100%;
     }
 
 }
+
+/* //  Модальное окно */
