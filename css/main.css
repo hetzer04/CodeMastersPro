@@ -98,6 +98,15 @@ body::-webkit-scrollbar {
     color: var(--title-1);
     text-align: center;
 }
+.title-direct {
+    margin-bottom: 30px;
+    margin-top: 30px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--title-1);
+      text-align: center;
+}
 
 .title-2 {
     margin-bottom: 20px;
@@ -810,6 +819,12 @@ body::-webkit-scrollbar {
         margin-bottom: 30px;
         font-size: 40px;
       
+    }
+
+    .title-direct {
+        margin-bottom: 30px;
+        font-size: 40px;
+        margin-top: 12px;
     }
 
     .title-2 {
