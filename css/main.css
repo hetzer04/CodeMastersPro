@@ -786,8 +786,17 @@ width: 100%;
 
 
 /*burger_nav_media*/
-  @media (max-width: 768px) {
- 
+  @media (max-width: 813px) {
+    .dark-mode-btn {
+        order: 0;
+    }
+    .pikto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        
+    }
     .navi {
       position: absolute;
       left: 0;
@@ -872,3 +881,28 @@ width: 100%;
   .nav-list__item--active {
     color: var(--second);
   }
+
+  @media (max-width: 421px) {
+
+    
+    .pikto {
+        margin-left: auto;
+       
+    }
+  }
+
+
+  @media (max-width: 408px) {
+        .logo {
+            margin-left: 70px;
+            
+        }
+  }
+  
+  @media (max-width: 384px) {
+    .logo {
+        margin-left: 60px;
+        
+    }
+}
+  
