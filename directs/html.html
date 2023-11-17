@@ -22,8 +22,8 @@
                 <div class="navi" id="nav">
                     <ul class="nav-list list-reset">
                         <li class="nav-list__item"><a href="../index.html#directs" class="nav-list__link nav-list__link--active">Направления</a></li>
-                        <li class="nav-list__item"><a href="../teachers.html" class="nav-list__link nav-list__link--active">Преподаватели</a></li>
-                        <li class="nav-list__item"><a href="../contacts.html" class="nav-list__link nav-list__link--active">Контакты</a></li>
+                        <li class="nav-list__item"><a href="../teachers.html" class="nav-list__link ">Преподаватели</a></li>
+                        <li class="nav-list__item"><a href="../contacts.html" class="nav-list__link ">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="pikto">
@@ -54,11 +54,26 @@
                     <p>результатом которых будет одностраничный сайт - landing page.</p>
                 </div>
 
-                <a href="#!" class="btn-outline">
+                <a href="#!" class="btn-outline" id="call-form">
                     <img src="../img/icons/gitHub-black.svg" alt="">
                     Начать обучение
                 </a>
-
+                 <!-- Modal -->
+                <div class="modal-parent" id="modal-call-form">
+                    <div class="modal-wrapper">
+                    <div class="modal">
+                        <h2 class="modal__title">Укажите свои контакты:</h2>
+                        <form action="../api/index.php" METHOD="POST" class="form" >
+                        
+                            <input type="text" name="name" class="form__input" required placeholder="Введите ваше имя">
+                    
+                            <input type="tel" name="phone" class="form__input" required placeholder="Введите номер телефона">
+                    
+                        <button type="submit" class="btn-reset btn form__btn">Отправить</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
