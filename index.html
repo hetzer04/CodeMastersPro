@@ -72,9 +72,15 @@
                     <h2 class="modal__title">Укажите свои контакты:</h2>
                     <form action="./api/index.php" METHOD="POST" class="form" >
                      
-                        <input type="text" name="name" class="form__input" required placeholder="Введите ваше имя">
+                        <div class="text-field">
+                            <input class="text-field__inp" type="text" name="name"required>
+                            <label class="text-field__placeholder">Введите имя</label>
+                        </div>
                   
-                        <input type="tel" name="phone" class="form__input" required placeholder="Введите номер телефона">
+                        <div class="text-field">
+                            <input class="text-field__inp" type="text" name="phone"required>
+                            <label class="text-field__placeholder">Введите телефон</label>
+                        </div>
                   
                       <button type="submit" class="btn-reset btn form__btn">Отправить</button>
                     </form>
