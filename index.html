@@ -16,17 +16,27 @@
         <div class="container">
             <div class="nav-row">
                 <a href="./index.html" class="logo"><strong>&lt;/&gt;CodeMasters</strong>PRO</a>
-
+                
+               
+            
                 <button class="dark-mode-btn">
                     <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
                     <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
                 </button>
 
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="./index.html#directs" class="nav-list__link nav-list__link--active">Направления</a></li>
-                    <li class="nav-list__item"><a href="./teachers.html" class="nav-list__link nav-list__link--active">Преподаватели</a></li>
-                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link nav-list__link--active">Контакты</a></li>
-                </ul>
+               
+                <div class="navi" id="nav">
+                    <ul class="nav-list list-reset">
+                        <li class="nav-list__item"><a href="./index.html#directs" class="nav-list__link nav-list__link--active">Направления</a></li>
+                        <li class="nav-list__item"><a href="./teachers.html" class="nav-list__link nav-list__link--active">Преподаватели</a></li>
+                        <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link nav-list__link--active">Контакты</a></li>
+                    </ul>
+                </div>
+                <button class="btn-reset burger" id="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -56,7 +66,7 @@
             <div class="modal-parent" id="modal-call-form">
                 <div class="modal-wrapper">
                   <div class="modal">
-                    <h2 class="modal__title">Укажите свои контакты и мы с вами свяжемся:</h2>
+                    <h2 class="modal__title">Укажите свои контакты:</h2>
                     <form action="./api/index.php" METHOD="POST" class="form" >
                      
                         <input type="text" name="name" class="form__input" required placeholder="Введите ваше имя">
