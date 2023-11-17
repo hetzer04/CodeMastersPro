@@ -809,6 +809,7 @@ body::-webkit-scrollbar {
     .title-1 {
         margin-bottom: 30px;
         font-size: 40px;
+        margin-top: 12px;
     }
 
     .title-2 {
@@ -817,7 +818,7 @@ body::-webkit-scrollbar {
     }
 
     /* Projects */
-
+  
     .project__title {
         font-size: 22px;
     }
