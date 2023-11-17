@@ -41,8 +41,8 @@
             
 
           
-            <button>
-                <a href="#!" class="btn modal-btn modal-backdrop" for="modal-toggle">Начать обучение</a>
+            <button id="call-form">
+                <a href="#!" class="btn" >Начать обучение</a>
              </button>
                        
          
@@ -54,22 +54,21 @@
 
  
             <!-- Modal -->
-            <form action="./api/index.php" method="post">
-                <div class="input">
-                  <input type="text" name="name" id="email" required>
-                  <label for="">Name</label>
+            <div class="modal-parent" id="modal-call-form">
+                <div class="modal-wrapper">
+                  <div class="modal">
+                    <h2 class="modal__title">Укажите свои контакты и мы с вами свяжемся:</h2>
+                    <form action="./api/index.php" METHOD="POST" class="form" >
+                     
+                        <input type="text" name="name" class="form__input" required placeholder="Введите ваше имя">
+                  
+                        <input type="tel" name="phone" class="form__input" required placeholder="Введите номер телефона">
+                  
+                      <button type="submit" class="btn-reset btn form__btn">Отправить</button>
+                    </form>
+                  </div>
                 </div>
-                <div class="input">
-                  <input type="text" name="phone" id="subject" required>
-                  <label for="">phone</label>
-                </div>
-                <!-- <div class="input">
-                  <textarea type="text" name="text" id="text" rows="20"></textarea>
-                  <label for="">Текст</label>
-                </div> -->
-                <button type="submit">Отправить</button>
-              </form>
-         
+            </div>
     </header>
 
     <main class="section" id="directs">
