@@ -103,3 +103,50 @@
 
 </body>
 </html>
+
+
+
+
+
+<main className="section">
+    <div className="container">
+        <div className="project-details">
+
+            <h1 className="title-1">HTML</h1>
+
+            <img src="../img/projects/01.png" alt="" className="project-details__cover">
+
+            <div className="project-details__desc">
+               <p>Быстрое погружение в актуальные технологии HTML и CSS с многочисленными практическими заданиями,</p>
+                <p>результатом которых будет одностраничный сайт - landing page.</p>
+            </div>
+
+            <a href="#!" className="btn-outline" id="call-form">
+                <img src={github} alt="">
+                Начать обучение
+            </a>
+             {/* <!-- Modal --> */}
+            <div className="modal-parent" id="modal-call-form">
+                <div className="modal-wrapper">
+                <div className="modal">
+                    <h2 className="modal__title">Укажите свои контакты:</h2>
+                    <form action="../api/index.php" METHOD="POST" className="form" >
+                    
+                        <div className="text-field">
+                            <input className="text-field__inp" type="text" name="name"required />
+                            <label className="text-field__placeholder">Введите имя</label>
+                        </div>
+                  
+                        <div className="text-field">
+                            <input className="text-field__inp" type="text" name="phone"required />
+                            <label className="text-field__placeholder">Введите телефон</label>
+                        </div>
+                
+                    <button type="submit" className="btn-reset btn form__btn">Отправить</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
