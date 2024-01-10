@@ -100,10 +100,57 @@
                         </p>
                     </div>
 
-                    <a href="#!" class="btn-outline">
+                    <a href="#!" class="btn-outline" id="call-form">
                         <img src="../img/icons/gitHub-black.svg" alt="" />
                         Начать обучение
                     </a>
+
+                    <!-- Modal -->
+                    <div class="modal-parent" id="modal-call-form">
+                        <div class="modal-wrapper">
+                            <div class="modal">
+                                <h2 class="modal__title">
+                                    Укажите свои контакты:
+                                </h2>
+                                <form
+                                    action="../api/index.php"
+                                    method="POST"
+                                    class="form"
+                                >
+                                    <div class="text-field">
+                                        <input
+                                            class="text-field__inp"
+                                            type="text"
+                                            name="name"
+                                            required
+                                        />
+                                        <label class="text-field__placeholder"
+                                            >Введите имя</label
+                                        >
+                                    </div>
+
+                                    <div class="text-field">
+                                        <input
+                                            class="text-field__inp"
+                                            type="text"
+                                            name="phone"
+                                            required
+                                        />
+                                        <label class="text-field__placeholder"
+                                            >Введите телефон</label
+                                        >
+                                    </div>
+
+                                    <button
+                                        type="submit"
+                                        class="btn-reset btn form__btn"
+                                    >
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
