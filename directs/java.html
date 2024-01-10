@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMastersPRO</title>
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-row">
-                <a href="../index.html" class="logo"><strong>&lt;/&gt;CodeMasters</strong>PRO</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CodeMastersPRO</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <nav class="nav" id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <a href="../index.html" class="logo"
+                        ><strong>&lt;/&gt;CodeMasters</strong>PRO</a
+                    >
 
-                <button class="dark-mode-btn">
-                    <img src="../img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                    <img src="../img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                </button>
-
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="../index.html#directs" class="nav-list__link nav-list__link--active">Направления</a></li>
-                    <li class="nav-list__item"><a href="../teachers.html" class="nav-list__link nav-list__link--active">Преподаватели</a></li>
-                    <li class="nav-list__item"><a href="../contacts.html" class="nav-list__link ">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="section">
-        <div class="container">
-            <div class="project-details">
-
-                <h1 class="title-1">JAVA</h1>
-
-                <img src="../img/projects/04.png" alt="" class="project-details__cover">
-
-                <div class="project-details__desc">
-                    <p>Вы узнаете, что такое классы, объекты, методы, переменные, типы данных, массивы, условные операторы и циклы.</p><br>
-                    <p>Глянете одним глазком на коллекции и ООП,</p><br>
-                    <p> а также начнете работать в среде IntelliJ IDEA, которой пользуются программисты во всем мире!</p><br>
-                    <p>Наверное, не существует программиста, который не хотел бы писать игры. И хотя делать это значительно сложнее, </p>
-                    <p>чем играть в игры, мало что сравнится с ощущением, когда вы видите, как игра рождается прямо из-под ваших пальцев.</p>
-                </div>
-
-                <a href="#!" class="btn-outline">
-                    <img src="../img/icons/gitHub-black.svg" alt="">
-                    Начать обучение
-                </a>
-
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <ul class="social">
-                    <!-- <li class="social__item"><a href="#!"><img src="./img/icons/vk.svg" alt="Link"></a></li> -->
-                    <li class="social__item"><a href="#!"><img src="../img/icons/instagram.svg" alt="Link"></a></li>
-                    <li class="social__item"><a href="#!"><img src="../img/icons/gitHub.svg" alt="Link"></a></li>
-                </ul>
-                <div class="copyright">
-                    <p>© 2023 CodeMastersPro</p>
+                    <div class="navi" id="nav">
+                        <ul class="nav-list list-reset">
+                            <li class="nav-list__item">
+                                <a
+                                    href="../index.html#directs"
+                                    class="nav-list__link nav-list__link--active"
+                                    >Направления</a
+                                >
+                            </li>
+                            <li class="nav-list__item">
+                                <a
+                                    href="../teachers.html"
+                                    class="nav-list__link"
+                                    >Преподаватели</a
+                                >
+                            </li>
+                            <li class="nav-list__item">
+                                <a
+                                    href="../contacts.html"
+                                    class="nav-list__link"
+                                    >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pikto">
+                        <button class="dark-mode-btn">
+                            <img
+                                src="../img/icons/sun.svg"
+                                alt="Light mode"
+                                class="dark-mode-btn__icon"
+                            />
+                            <img
+                                src="../img/icons/moon.svg"
+                                alt="Dark mode"
+                                class="dark-mode-btn__icon"
+                            />
+                        </button>
+                        <button class="btn-reset burger" id="burger">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </nav>
 
-    <script src="../js/main.js"></script>
+        <main class="section">
+            <div class="container">
+                <div class="project-details">
+                    <h1 class="title-1">JAVA</h1>
 
-</body>
+                    <img
+                        src="../img/projects/04.png"
+                        alt=""
+                        class="project-details__cover"
+                    />
+
+                    <div class="project-details__desc">
+                        <p>
+                            Вы узнаете, что такое классы, объекты, методы,
+                            переменные, типы данных, массивы, условные операторы
+                            и циклы.
+                        </p>
+                        <br />
+                        <p>Глянете одним глазком на коллекции и ООП,</p>
+                        <br />
+                        <p>
+                            а также начнете работать в среде IntelliJ IDEA,
+                            которой пользуются программисты во всем мире!
+                        </p>
+                        <br />
+                        <p>
+                            Наверное, не существует программиста, который не
+                            хотел бы писать игры. И хотя делать это значительно
+                            сложнее,
+                        </p>
+                        <p>
+                            чем играть в игры, мало что сравнится с ощущением,
+                            когда вы видите, как игра рождается прямо из-под
+                            ваших пальцев.
+                        </p>
+                    </div>
+
+                    <a href="#!" class="btn-outline">
+                        <img src="../img/icons/gitHub-black.svg" alt="" />
+                        Начать обучение
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="social">
+                        <!-- <li class="social__item"><a href="#!"><img src="./img/icons/vk.svg" alt="Link"></a></li> -->
+                        <li class="social__item">
+                            <a href="#!"
+                                ><img
+                                    src="../img/icons/instagram.svg"
+                                    alt="Link"
+                            /></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!"
+                                ><img src="../img/icons/gitHub.svg" alt="Link"
+                            /></a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        <p>© 2023 CodeMastersPro</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
 </html>
