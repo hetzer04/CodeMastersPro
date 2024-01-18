@@ -34,8 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(!$mail->send()) {
         echo 'Error';
     } else {
+        sleep(4);
         header('location: ../index.html');
     }
+
+  
    
   }
 ?>
