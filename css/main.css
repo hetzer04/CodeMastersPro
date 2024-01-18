@@ -849,7 +849,7 @@ body::-webkit-scrollbar {
 }
 .active:before {
   width: 100%;
-  transition: width 2s linear;
+  transition: width 3s linear;
 }
 .active span:nth-of-type(1) {
   top: -100%;
