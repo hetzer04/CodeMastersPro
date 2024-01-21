@@ -48,13 +48,48 @@
         <div class="container">
             <div class="project-details">
 
-                <h1 class="title-1">HTML</h1>
+                <h1 class="title-1">WEB разработчик</h1>
 
                 <img src="../img/projects/01.png" alt="" class="project-details__cover">
 
                 <div class="project-details__desc">
-                   <p>Быстрое погружение в актуальные технологии HTML и CSS с многочисленными практическими заданиями,</p>
-                    <p>результатом которых будет одностраничный сайт - landing page.</p>
+                    <h4>Чему вы научитесь:</h4>
+                    <br>
+                    <ul class="content">
+                        <li>изучите базовые конструкции языков HTML, CSS и JavaScript,</li>
+                        <li>разберётесь с тегами и их параметрами, CSS-свойствами, селекторами и каскадностью,</li>
+                        <li>изучите команды JavaScript, переменные условия, циклы,</li>
+                        <li>попробуете себя в роли фронтендера
+                            <ul>
+                                <li>внесёте правки в вёрстку и скрипты страницы,</li>
+                                <li>сверстаете с нуля сайт из графического макета,</li>
+                                <li>напишете с нуля интерактивные компоненты по техническому заданию.</li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                        <h4>Познакомитесь с основными возможностями библиотеки React:</h4>
+                        <br>
+                        <ul class="content">
+                            <li>JSX,</li>
+                            <li>компоненты,</li>
+                            <li>хуки,</li>
+                            <li>научитесь управлять состоянием компонентов и передавать данные (на примере React Hooks useState),</li>
+                            <li>разработаете по техническому заданию две игры, которые можно будет добавить в портфолио,</li>
+                            <li>познакомитесь с современной архитектурой одностраничного приложения (SPA).</li>
+                        </ul>
+                        <br>
+                        <h4>Погружение в бэкенд:</h4>
+                        <br>
+                        <ul class="content">
+                            <li>создавать шаблоны из вёрстки, а потом собирать из них страницы сайта,</li>
+                            <li>внедрять данные в шаблоны и «научите» ваш сайт отображать подробную информацию о разных товарах,</li>
+                            <li>поэкспериментируете с циклами и добавите на сайт страницу со списком товаров с фильтрацией, сортировкой и постраничным выводом,</li>
+                            <li>потренируетесь рассчитывать скидки, стоимости товаров и поработаете над красивым отображением дат,</li>
+                            <li>и наконец, разберётесь, как запустить сайт, написанный на PHP, на домашнем компьютере.</li>
+                        </ul>
+                   
                 </div>
 
                 <a href="#!" class="btn-outline" id="call-form">
@@ -113,47 +148,3 @@
 
 
 
-
-
-<main className="section">
-    <div className="container">
-        <div className="project-details">
-
-            <h1 className="title-1">HTML</h1>
-
-            <img src="../img/projects/01.png" alt="" className="project-details__cover">
-
-            <div className="project-details__desc">
-               <p>Быстрое погружение в актуальные технологии HTML и CSS с многочисленными практическими заданиями,</p>
-                <p>результатом которых будет одностраничный сайт - landing page.</p>
-            </div>
-
-            <a href="#!" className="btn-outline" id="call-form">
-                <img src={github} alt="">
-                Начать обучение
-            </a>
-             {/* <!-- Modal --> */}
-            <div className="modal-parent" id="modal-call-form">
-                <div className="modal-wrapper">
-                <div className="modal">
-                    <h2 className="modal__title">Укажите свои контакты:</h2>
-                    <form action="../api/index.php" METHOD="POST" className="form" >
-                    
-                        <div className="text-field">
-                            <input className="text-field__inp" type="text" name="name"required />
-                            <label className="text-field__placeholder">Введите имя</label>
-                        </div>
-                  
-                        <div className="text-field">
-                            <input className="text-field__inp" type="text" name="phone"required />
-                            <label className="text-field__placeholder">Введите телефон</label>
-                        </div>
-                
-                    <button type="submit" className="btn-reset btn form__btn">Отправить</button>
-                    </form>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>

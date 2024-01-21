@@ -1113,6 +1113,14 @@ body::-webkit-scrollbar {
   }
 
 
+  .content{
+    text-align: left;
+  }
+  .content li::before{
+    content: "—";
+    margin-right: 10px;
+  }
+
   @media (max-width: 408px) {
         .logo {
             margin-left: 70px;
