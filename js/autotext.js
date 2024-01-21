@@ -1,8 +1,5 @@
 const textEl = document.getElementById('text')
-
-
 const text = 'Добро пожаловать в школу программирования!'
-
 let idx = 1
 let speed = 70
 
@@ -14,7 +11,7 @@ function writeText() {
     idx++
 
     if(idx >= text.length) {
-        inx = text.length
+        idx = text.length
     }
 
     setTimeout(writeText, speed)
