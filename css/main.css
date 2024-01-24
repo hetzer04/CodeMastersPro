@@ -883,7 +883,18 @@ body::-webkit-scrollbar {
 .finished .check i {
   transform-origin: center center;
 }
-
+.web, .java {
+  height: 300px;
+}
+  .content{
+    width:100%;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .content li::before{
+    content: "—";
+    margin-right: 10px;
+  }
 @keyframes loading {
   100% {
     transform: rotate(360deg);
@@ -910,7 +921,8 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 620px) {
-
+  
+  h4, .content{ font-size: 15px;}
     /* Header  */
 
     .header {
@@ -1104,28 +1116,30 @@ body::-webkit-scrollbar {
   }
 
   @media (max-width: 421px) {
-
-    
+    .java, .web{
+      height: 150px;
+    }
+    h4{
+      font-size: 14px;
+    }
+     .content{ font-size: 12px;}
     .pikto {
         margin-left: auto;
        
     }
   }
 
-.web, .java {
-  height: 300px;
-}
-  .content{
-    width:100%;
-    text-align: justify;
-    font-size: 20px;
-  }
-  .content li::before{
-    content: "—";
-    margin-right: 10px;
-  }
+
 
   @media (max-width: 408px) {
+
+    .java, .web{
+      height: 100px;
+    }
+    h4{
+      font-size: 12px;
+    }
+    .content{ font-size: 10px;}
         .logo {
             margin-left: 70px;
             
