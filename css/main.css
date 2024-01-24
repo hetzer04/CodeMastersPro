@@ -1112,9 +1112,13 @@ body::-webkit-scrollbar {
     }
   }
 
-
+.web, .java {
+  height: 300px;
+}
   .content{
-    text-align: left;
+    width:100%;
+    text-align: justify;
+    font-size: 20px;
   }
   .content li::before{
     content: "—";
