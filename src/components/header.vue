@@ -24,7 +24,7 @@ const showMenu = ref(false);
       <nav class="hidden md:flex flex-1 justify-center gap-5">
         <NavItem :text="'Направления'" :url="'#'" />
         <NavItem :text="'Преподователи'" :url="'#'" />
-        <NavItem :text="'Контакты'" :url="'#'" />
+        <NavItem :text="'Контакты'" :url="'#/about'" />
       </nav>
       <a
         href="#"
