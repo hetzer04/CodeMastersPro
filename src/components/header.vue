@@ -3,6 +3,7 @@ import ArrowRightSvg from "../assets/svg/arrowRightSvg.vue";
 import HamburgerMenuSvg from "../assets/svg/hamburgerMenuSvg.vue";
 import NavItem from "./UI/navItem.vue";
 import HamburgerMenu from "./hamburgerMenu.vue";
+import logo from '../../public/logo_black.png'
 
 import { ref } from "vue";
 
@@ -16,7 +17,7 @@ const showMenu = ref(false);
     >
       <a href="/">
         <img
-          :src="'logo_black.png'"
+          :src="logo"
           alt="Описание изображения"
           class="w-40 rounded p-2 bg-slate-50"
         />
@@ -24,7 +25,7 @@ const showMenu = ref(false);
       <nav class="hidden md:flex flex-1 justify-center gap-5">
         <NavItem :text="'Направления'" :url="'#'" />
         <NavItem :text="'Преподователи'" :url="'#'" />
-        <NavItem :text="'Контакты'" :url="'#/about'" />
+        <NavItem :text="'Контакты'" :url="'/about'" />
       </nav>
       <a
         href="#"

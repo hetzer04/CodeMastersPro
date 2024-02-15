@@ -6,5 +6,5 @@ defineProps({
 </script>
 
 <template>
-  <a :href="url" class="hover:border-slate-200 border-transparent border-2 rounded p-2 text-center">{{ text }}</a>
+  <router-link :to="url" class="hover:border-slate-200 border-transparent border-2 rounded p-2 text-center">{{ text }}</router-link>
 </template>
