@@ -4,5 +4,7 @@ import Header from "./components/header.vue";
 
 <template>
   <Header/>
-  <router-view />
+  <main class="w-screen h-dvh p-5 overflow-auto">
+    <router-view />
+  </main>
 </template>
